@@ -50,7 +50,7 @@ ol {
   list-style: none;
 }
 
-/* HEADER SEction */
+/*  #region HEADER SEction */
 .header-logo {
   font-weight: 500;
   font-size: 20px;
@@ -78,6 +78,8 @@ ol {
 }
 .header-social-link {
 }
+
+/* #endregion header section */
 
 /* #region HERO SECTION */
 
