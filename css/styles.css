@@ -30,15 +30,18 @@
   font-style: normal;
 }
 
-
-
-
 body {
   font-family: "Gilroy", sans-serif;
   color: rgba(12, 12, 12, 0.7);
   background-color: #fbfbfb;
 }
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -60,20 +63,19 @@ ol {
 }
 
 .container {
-width: 1180px;
-margin: 0 auto;
-padding: 0 15px;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
   padding: 50px 0;
 }
 
-
 /*  #region HEADER SEction */
 
 .header {
-  border-bottom: 1px solid rgba(12, 12, 12, 0.1); ;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
 .header-logo {
   font-weight: 500;
@@ -91,9 +93,8 @@ padding: 0 15px;
 }
 .header-nav-list {
   display: flex;
-  
 }
-.header-nav-item:not(:last-child){
+.header-nav-item:not(:last-child) {
   margin-right: 40px;
 }
 .header-nav-link {
@@ -104,18 +105,16 @@ padding: 0 15px;
   color: #0c0c0c;
   padding: 30px 0;
   display: block;
-  
 }
 .header-social-list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 .class {
 }
 .header-social-item {
 }
 .header-social-link {
-  
 }
 
 /* #endregion header section */
@@ -123,6 +122,15 @@ padding: 0 15px;
 /* #region HERO SECTION */
 
 .hero {
+  padding-top: 80px;
+}
+
+.hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.hero-text-wrap {
 }
 .hero-title {
   font-weight: 600;
@@ -130,6 +138,8 @@ padding: 0 15px;
   line-height: 0.9;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  max-width: 597px;
+  margin-bottom: 20px;
 }
 
 .hero-title-part {
@@ -137,10 +147,17 @@ padding: 0 15px;
 }
 .hero-descr {
   font-weight: 500;
-
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
+  max-width: 480px;
+}
+
+.hero-scroll-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .hero-link {
   font-weight: 500;
@@ -158,6 +175,57 @@ padding: 0 15px;
 }
 /* #endregion hero section */
 
+/* #region about us */
+.about {
+}
+
+.container {
+}
+
+.about-wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.about-text-wrap {
+  background: #f3f3f3;
+  border-radius: 50px;
+
+  max-width: 580px;
+  padding: 80px 60px;
+}
+.about-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 40px;
+}
+.about-descript {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 20px;
+}
+.about-descript-part {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 40px;
+}
+.about-button {
+  background: #3350e9;
+  border-radius: 16px;
+  padding: 15px 38px;
+  border: none;
+}
+
+/* #endregion about us */
 
 /* #region CATALOG */
 
@@ -165,60 +233,47 @@ padding: 0 15px;
 }
 
 .catalog-title {
-
-font-weight: 600;
-font-size: 48px;
-line-height: 0.91667;
-letter-spacing: -0.02em;
-color: #0c0c0c;
-margin-bottom:40px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91667;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 40px;
 }
 .catalog-list {
-display: flex;
-flex-wrap: wrap;
-column-gap: 23px;
-row-gap: 32px;
-
-
-
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 23px;
+  row-gap: 32px;
 }
 .catalog-list-item {
-border: 1px solid rgba(12, 12, 12, 0.05);
-border-radius: 30px;
-background: #f3f3f3;
-
-
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background: #f3f3f3;
+  width: calc((100% - (23px * 2)) / 3);
 }
 .catalog-item-text {
   padding: 10px 32px 32px 24px;
-
 }
-
 
 .catalog-list-title {
-
-font-weight: 500;
-font-size: 20px;
-line-height: 1;
-letter-spacing: -0.02em;
-color: #0c0c0c;
-
-
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
 }
 .catalog-list-price {
-
-font-weight: 400;
-font-size: 14px;
-line-height: 1.28;
-letter-spacing: -0.02em;
-color: rgba(12, 12, 12, 0.5);
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
 }
 
-
-
-
-
-
-
 /* #endregion CATALOG */
+
+/* region advert */
+
+/* #endregion advert */
