@@ -219,6 +219,11 @@ ol {
   margin-bottom: 40px;
 }
 .about-button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
   background: #3350e9;
   border-radius: 16px;
   padding: 15px 38px;
@@ -274,6 +279,48 @@ ol {
 
 /* #endregion CATALOG */
 
-/* region advert */
+/* #region advert */
 
+.advert {
+}
+.container {
+}
+.advert-wrap {
+  border-radius: 30px;
+  background-image: url(../images/image70.png);
+  background-color: #0c0c0c;
+  background-size: cover;
+  padding: 83px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.advert-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  max-width: 690px;
+}
+
+.title-accent {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advert-button {
+  background: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  padding: 15px 44px;
+}
 /* #endregion advert */
+
+/* #region sale */
+
+/* #endregion sale */
