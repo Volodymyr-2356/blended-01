@@ -255,7 +255,8 @@ ol {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background: #f3f3f3;
-  width: calc((100% - (23px * 2)) / 3);
+  /* width: calc((100% - (23px * 2)) / 3); */
+  flex-basis: calc((100% - (23px * 2)) / 3);
 }
 .catalog-item-text {
   padding: 10px 32px 32px 24px;
@@ -331,6 +332,7 @@ ol {
   line-height: 0.91;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  margin-bottom: 40px;
 }
 
 .sale-box {
@@ -352,9 +354,7 @@ ol {
   background: #f3f3f3;
   flex-basis: calc(100% - (10px * 3) / 4);
   max-width: 132px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
   padding: 16px 18px;
 }
 
@@ -394,6 +394,7 @@ ol {
   display: flex;
   column-gap: 9px;
   align-items: center;
+  margin-bottom: 30px;
 }
 .new-price {
   font-weight: 600;
@@ -419,14 +420,72 @@ ol {
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 40px;
 }
 .sale-main-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
 }
 .sale-main-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
   color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
 }
 
 /* #endregion sale */
+
+/* #region REVIEWS */
+
+.reviews {
+}
+.container {
+}
+.reviews-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 40px;
+}
+.reviews-list {
+  display: flex;
+  column-gap: 20px;
+}
+.reviews-item {
+  border-radius: 30px;
+  padding: 32px 36px;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-basis: calc((100% - (20px * 2)) / 3); */
+  flex: 1;
+}
+.reviews-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0c0c0c;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.reviews-item-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
+
+/* #endregion REVIEWS */
