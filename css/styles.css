@@ -489,3 +489,95 @@ ol {
 }
 
 /* #endregion REVIEWS */
+
+/* #region CONTACT */
+
+.contact {
+
+
+}
+.contact-title {
+  font-family: "Gilroy", sans-serif;
+font-weight: 600;
+font-size: 48px;
+line-height: 0.91;
+letter-spacing: -0.02em;
+color: #0c0c0c;
+margin-bottom: 40px;
+}
+
+.contact-big-box {
+  display: flex;
+  column-gap: 40px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  background-color:#f3f3f3;
+  max-width: 580px;
+  padding: 50px 60px;
+  border-radius: 50px;
+
+}
+.contact-descr {
+  font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 32px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.input-form {
+  border: 1px solid rgba(12, 12, 12, 0.15);
+    border-radius: 12px;
+    
+    width: 460px;
+    height: 52px;
+    background-color: inherit;
+    margin-bottom: 18px;
+    padding-left: 18px;
+  
+}
+/* .input-form:not(:last-child) {
+  margin-bottom: 18px;
+} */
+.input-email {
+}
+.input-tel {
+}
+.input-comment {
+  border: 1px solid rgba(12, 12, 12, 0.15);
+    border-radius: 12px;
+    
+background-color: inherit;
+    height: 90px;
+    margin-bottom:32px;
+    padding-left: 18px;
+}
+.button-send {
+
+  font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #fbfbfb;
+
+    border-radius: 16px;
+      padding: 17px 63px;
+      background: #3350e9;
+      /* outline: none; */
+      border: none;
+      width: 160px;
+}
+
+
+/* #endregion CONTACT */
