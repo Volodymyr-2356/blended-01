@@ -94,7 +94,9 @@ button {
   justify-content: space-between;
 }
 .header-nav {
+  /* position: relative; */
 }
+
 .header-nav-list {
   display: flex;
 }
@@ -109,7 +111,21 @@ button {
   color: #0c0c0c;
   padding: 30px 0;
   display: block;
+  position: relative;
 }
+.header-nav-link.curent::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #3350e9;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 22px;
+
+  transform: translateX(-50%);
+}
+
 .header-social-list {
   display: flex;
   gap: 10px;
@@ -314,7 +330,7 @@ button {
 }
 
 .advert-button {
-  background: none;
+  background-color: transparent;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
@@ -323,7 +339,14 @@ button {
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
   padding: 15px 44px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
+.advert-button:hover,
+.advert-button:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
+}
+
 /* #endregion advert */
 
 /* #region sale */
@@ -497,6 +520,7 @@ button {
 /* #region CONTACT */
 
 .contact {
+  margin-bottom: 50px;
 }
 .contact-title {
   font-family: "Gilroy", sans-serif;
@@ -600,6 +624,7 @@ button {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 126px;
 }
 .footer-logo {
   font-weight: 500;
@@ -659,6 +684,60 @@ button {
 .social-icon {
   opacity: 0.8;
   fill: #fff;
+}
+
+/* second part footer (footer-header) */
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.footer-header-list {
+  display: flex;
+  column-gap: 40px;
+}
+.footer-header-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
+}
+.footer-header-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fbfbfb;
+  max-width: 162px;
+}
+
+/* footer terms part  */
+
+.footer-terms {
+  border-top: 1px solid rgba(251, 251, 251, 0.1);
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-terms-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+}
+.footer-terms-link-block {
+  display: flex;
+  column-gap: 20px;
+}
+.footer-terms-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: rgba(251, 251, 251, 0.5);
 }
 
 /* #endregion FOOTER */
